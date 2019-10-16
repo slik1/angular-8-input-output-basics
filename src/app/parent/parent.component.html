@@ -1,0 +1,7 @@
+This text is part of parent.component.html: <br>
+{{parentData.name}}
+<hr>
+<br>
+<br>
+This text is part of child.component.html:<br>
+<app-child [parentData]="parentData" (emitData)="childChanged($event)"></app-child>
